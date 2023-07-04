@@ -10,7 +10,7 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="header flex container">
+        <div id="topo" class="header flex container">
             <!-- Logo -->
             <p class="nav-primary logo">BD<span>.dev</span></p>
             <div id="close-menu" onclick="toggleMenu()"></div>
@@ -19,15 +19,24 @@
             <nav id="nav-secondary" class="nav-secondary flex">
                 <ul>
                     <!-- <li><button>Home</button></li> -->
-                    <li><button>About</button></li>
-                    <li><button>Projects</button></li>
-                    <li><button>Contact</button></li>
+                    <li><a href="#about"><button class="btn-principal">About</button></a></li>
+                    <li><a href="#projects"><button class="btn-principal">Projects</button></a></li>
+                    <li><a href="#contact"><button class="btn-principal">Contact</button></a></li>
                 </ul>
                 <!-- Nav social media -->
                 <div class="social-media flex">
-                    <a href=""><img src="images/icons/github.png" alt="Icone do Github"></a>
-                    <a href=""><img src="images/icons/linkedin.png" alt="Icone do LikedIn"></a>
-                    <a href=""><img src="images/icons/instagram.png" alt="Icone da Instagram"></a>
+                    <a href="https://github.com/barbaradamasdev"><img src="images/icons/github.png" alt="Icone do Github"></a>
+                    <a href="https://www.linkedin.com/in/barbaradamascenodev/"><img src="images/icons/linkedin.png" alt="Icone do LikedIn"></a>
+                    <!-- <a href="https://www.instagram.com/barbaradamasceno.dev/"><img src="images/icons/instagram.png" alt="Icone da Instagram"></a> -->
+                </div>
+
+                <div class="change-mode" id="change-mode">
+                    <input type="checkbox" name="change-theme" id="change-theme">
+                    <label for="change-theme" class="change-theme flex">
+                        <div class="mode-moon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 20 20"><path fill="white" fill-rule="evenodd" d="M2.9.5a.4.4 0 0 0-.8 0v.6h-.6a.4.4 0 1 0 0 .8h.6v.6a.4.4 0 1 0 .8 0v-.6h.6a.4.4 0 0 0 0-.8h-.6V.5Zm3 3a.4.4 0 1 0-.8 0v.6h-.6a.4.4 0 1 0 0 .8h.6v.6a.4.4 0 1 0 .8 0v-.6h.6a.4.4 0 0 0 0-.8h-.6v-.6Zm-4 3a.4.4 0 1 0-.8 0v.6H.5a.4.4 0 1 0 0 .8h.6v.6a.4.4 0 0 0 .8 0v-.6h.6a.4.4 0 0 0 0-.8h-.6v-.6ZM8.544.982l-.298-.04c-.213-.024-.34.224-.217.4A6.57 6.57 0 0 1 9.203 5.1a6.602 6.602 0 0 1-6.243 6.59c-.214.012-.333.264-.183.417a6.8 6.8 0 0 0 .21.206l.072.066l.26.226l.188.148l.121.09l.187.131l.176.115c.12.076.244.149.37.217l.264.135l.26.12l.303.122l.244.086a6.568 6.568 0 0 0 1.103.26l.317.04l.267.02a6.6 6.6 0 0 0 6.943-7.328l-.037-.277a6.557 6.557 0 0 0-.384-1.415l-.113-.268l-.077-.166l-.074-.148a6.602 6.602 0 0 0-.546-.883l-.153-.2l-.199-.24l-.163-.18l-.12-.124l-.16-.158l-.223-.2l-.32-.26l-.245-.177l-.292-.19l-.321-.186l-.328-.165l-.113-.052l-.24-.101l-.276-.104l-.252-.082l-.325-.09l-.265-.06l-.292-.053Zm1.86 4.318a7.578 7.578 0 0 0-.572-2.894a5.601 5.601 0 1 1-4.748 10.146a7.61 7.61 0 0 0 3.66-2.51a.749.749 0 0 0 1.355-.442a.75.75 0 0 0-.584-.732c.062-.116.122-.235.178-.355A1.25 1.25 0 1 0 10.35 6.2c.034-.295.052-.595.052-.9Z" clip-rule="evenodd"/></svg></div>
+                        <div class="mode-sun"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="yellow" d="M12 20.937a1.074 1.074 0 0 1-.94-.542L9.61 17.9a.084.084 0 0 0-.1-.041l-2.782.741A1.087 1.087 0 0 1 5.4 17.272l.748-2.8a.088.088 0 0 0-.041-.1l-2.5-1.439a1.086 1.086 0 0 1 0-1.881L6.1 9.61a.087.087 0 0 0 .041-.1L5.4 6.728A1.087 1.087 0 0 1 6.728 5.4l2.8.748a.091.091 0 0 0 .1-.041l1.439-2.5A1.076 1.076 0 0 1 12 3.063a1.074 1.074 0 0 1 .94.542L14.39 6.1a.084.084 0 0 0 .1.041l2.782-.741A1.087 1.087 0 0 1 18.6 6.728l-.748 2.8a.087.087 0 0 0 .041.1l2.5 1.439a1.086 1.086 0 0 1 0 1.881L17.9 14.39a.089.089 0 0 0-.041.1l.748 2.784a1.087 1.087 0 0 1-1.335 1.326l-2.8-.748a.089.089 0 0 0-.1.041l-1.439 2.5a1.076 1.076 0 0 1-.94.544Zm-2.466-4.084a1.091 1.091 0 0 1 .942.541l1.448 2.5a.082.082 0 0 0 .075.043a.081.081 0 0 0 .074-.043l1.44-2.5a1.083 1.083 0 0 1 1.221-.507l2.8.747a.087.087 0 0 0 .106-.106l-.747-2.785a1.089 1.089 0 0 1 .5-1.222l2.5-1.448a.086.086 0 0 0 0-.15l-2.5-1.439a1.086 1.086 0 0 1-.507-1.221l.747-2.8a.08.08 0 0 0-.022-.083a.086.086 0 0 0-.085-.023l-2.784.747a1.088 1.088 0 0 1-1.222-.5l-1.448-2.5A.082.082 0 0 0 12 4.063a.081.081 0 0 0-.074.043l-1.44 2.5a1.087 1.087 0 0 1-1.222.507l-2.8-.747a.087.087 0 0 0-.106.106l.752 2.782a1.089 1.089 0 0 1-.5 1.222l-2.5 1.448a.082.082 0 0 0-.047.076a.081.081 0 0 0 .043.074l2.5 1.44a1.087 1.087 0 0 1 .507 1.221l-.747 2.8a.08.08 0 0 0 .022.083a.087.087 0 0 0 .085.023l2.784-.747a1.077 1.077 0 0 1 .277-.041Z"/><path fill="yellow" d="M12 15.875A3.875 3.875 0 1 1 15.875 12A3.88 3.88 0 0 1 12 15.875Zm0-6.75A2.875 2.875 0 1 0 14.875 12A2.879 2.879 0 0 0 12 9.125Z"/></svg></div>
+                        <div id="pointer"></div>
+                    </label>
                 </div>
             </nav>
 
@@ -44,12 +53,116 @@
     
 
     <main>
-        <section class="primary container flex">
+        <section id="about" class="container flex">
             <article>
-                <h1>Front-End Developer</h1>
+                <h1>Front-End Developer
+                    <div class="divideSection"></div>
+                </h1>
+                
                 <p>Hi, I'm Barbara Damasceno. A Front End Developer based in Recife, Brazil <img src="images/icons/pin.png" width="20px" height="20px" alt=""></p>
                 <p>Since I was a child, I have always had contact and affinity with technology, games, internet and the fact that we can build and manipulate things. When I was almost halfway through my graduation in the area, life led me to entrepreneurship and that's why I took a break from studying.</p>
                 <p>Since December 2022 I have returned to the area developing websites and studying front and back programming in more depth. I'm open to collaborating on interesting projects as a developer.</p>
+                
+                <div class="btns flex">
+                    <a href="#contact"><button class="btn-principal">Hire me</button></a>
+                    <a href="#projects"><button class="btn-principal">View my portfolio</button></a>
+                </div>
+            </article>
+            <article>
+                <img class="profile" src="https://media.licdn.com/dms/image/D4D03AQHlZ8WFEZu1UA/profile-displayphoto-shrink_800_800/0/1664913737853?e=2147483647&v=beta&t=cBbA59w3Rh8hiuwYA96I4qdUNy4mrUWJKrIrIXTQRCE" alt="">
+            </article>
+        </section>
+
+        <section id="projects" class="container">
+            <h1>Projects
+                <div class="divideSection"></div>
+            </h1>
+            
+            <article class="flex project">
+                <div class="image">
+                    <img src="https://raw.githubusercontent.com/barbaradamasdev/barbaradamasdev/main/space.png" alt="">
+                </div>
+                <div class="description flex">
+                    <h2>Space</h2>
+                    <div class="languages flex">
+                        <p>Html</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                    </div>
+                    <p class="destaque">Cursei Sistema de Informação na UFPE até metade do curso (5 semestres)</p>
+                    <div class="buttons flex">
+                        <a class="btn-live" href="">Live Site</a>
+                        <a class="btn-git" href="">Github</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="flex project invert">
+                <div class="image">
+                    <img src="https://github.com/barbaradamasdev/barbaradamasdev/raw/main/game.png" alt="">
+                </div>
+                <div class="description flex">
+                    <h2>Space</h2>
+                    <div class="languages flex">
+                        <p>Html</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                    </div>
+                    <p class="destaque">Cursei Sistema de Informação na UFPE até metade do curso (5 semestres)</p>
+                    <div class="buttons flex">
+                        <a class="btn-live" href="">Live Site</a>
+                        <a class="btn-git" href="">Github</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="flex project">
+                <div class="image">
+                    <img src="https://github.com/barbaradamasdev/Huddle-landing-page-with-alternating-feature-blocks/raw/main/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="description flex">
+                    <h2>Space</h2>
+                    <div class="languages flex">
+                        <p>Html</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                    </div>
+                    <p class="destaque">Cursei Sistema de Informação na UFPE até metade do curso (5 semestres)</p>
+                    <div class="buttons flex">
+                        <a class="btn-live" href="">Live Site</a>
+                        <a class="btn-git" href="">Github</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="flex project invert">
+                <div class="image">
+                    <img src="https://github.com/barbaradamasdev/Huddle-landing-page-with-alternating-feature-blocks/raw/main/design/desktop-preview.jpg" alt="">
+                </div>
+                <div class="description flex">
+                    <h2>Portfolio</h2>
+                    <div class="languages flex">
+                        <p>Html</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                    </div>
+                    <p class="destaque">Personal Portfolio made using HTML, CSS and JS. In this I include: animations, transitions, grid, flexbox and responsive layout.</p>
+                    <div class="buttons flex">
+                        <a class="btn-live" href="">Live Site</a>
+                        <a class="btn-git" href="">Github</a>
+                    </div>
+                </div>
+            </article>
+            
+        </section>
+
+        <section id="education" class="container">
+            <h1>Skills and Experiences
+                <div class="divideSection"></div>
+            </h1>
+            
+            <div class="left flex">
+
                 <div class="icons">
                     <ul class="flex">
                         <li class="flex">
@@ -94,114 +207,153 @@
                             Ruby
                         </li> -->
                     </ul>
-
-                    <div class="btns flex">
-                        <button>Hire me</button>
-                        <button>View my portfolio</button>
-                    </div>
                 </div>
-            </article>
-            <article>
-                <img class="profile" src="https://media.licdn.com/dms/image/D4D03AQHlZ8WFEZu1UA/profile-displayphoto-shrink_800_800/0/1664913737853?e=2147483647&v=beta&t=cBbA59w3Rh8hiuwYA96I4qdUNy4mrUWJKrIrIXTQRCE" alt="">
-            </article>
-        </section>
 
-        <section class="secondary container">
-            <h1>Projects</h1>
-            <article class="flex project">
-                <img src="https://raw.githubusercontent.com/barbaradamasdev/barbaradamasdev/main/space.png" alt="">
-                <div class="border"></div>
-                <div class="description flex">
-                    <h2>Space</h2>
-                    <p>Cursei Sistema de Informação na UFPE até metade do curso (5 semestres)</p>
-                    <p>Cursei Sistema de Informação na UFPE até metade do curso (5 semestres)</p>
-                    <hr>
-                    <div class="buttons flex">
-                        <button class="btn-live">Live Site</button>
-                        <button class="btn-git">Github</button>
-                    </div>
+                <div class="grid">
+                    <article class="card flex" id="card1" onclick="opencard(id)">
+                        <button class="open" >
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                        </button>
+                        <h2>Full Stack JavaScript</h2>
+                        <p style="margin-top: -20px">The Odin Project</p>
+                        <p>An 6-month open-source full stack coding curriculum designed to provide high-quality industry level training with an emphasis on hands-on projects.</p>
+                        <h4>Curriculum</h4>
+                        <div class="list flex">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                
+                            </ul>
+                            <ul>
+                                <li>Node.js</li>
+                                <!-- <li>Express</li>
+                                <li>MongoDB</li> -->
+                                <li>SQL</li>
+                                <li>Git</li>
+                                <li>Acessibility</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card flex" id="card2" onclick="opencard(id)">
+                        <button class="open">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                        </button>
+                        <h2>Conquering Responsive Layouts</h2>
+                        <p style="margin-top: -20px">Kevil Powell</p>
+                        <p>An 21-day challenge, by Kevin Powell. This challenge is structured as a drip course, with the content spread out over a 3-week period.</p>
+                        <h4>Curriculum</h4>
+                        <div class="list flex">
+                            <ul>
+                                <li>Responsive units</li>
+                                <li>Flexbox</li>
+                                <li>Mastering Media Queries</li>
+                            </ul>
+                            <ul>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card flex" id="card3" onclick="opencard(id)">
+                        <button class="open">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                        </button>
+                        <h2>CS50's Introduction to Computer Science</h2>
+                        <p style="margin-top: -20px">Harvard University</p>
+                        <p>A 6-month CS course focused on understanding algorithms and data structures, building and managing large-scale software projects, and mastering different programming languages such as C, Python, SQL, and JavaScript.</p>
+                        <h4>Curriculum</h4>
+                        <div class="list flex">
+                            <ul>
+                                <li>C</li>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>HTML, CSS</li>
+                            </ul>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Flask</li>
+                                <li>Django</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card flex" id="card4" onclick="opencard(id)">
+                        <button class="open">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                        </button>
+                        <h2>Sistema de Informação</h2>
+                        <p style="margin-top: -20px">UFPE - Universidade Federal de Pernambuco</p>
+                        <p>A 6-month CS course focused on understanding algorithms and data structures, building and managing large-scale software projects, and mastering different programming languages such as C, Python, SQL, and JavaScript.</p>
+                        <h4>Curriculum</h4>
+                        <div class="list flex">
+                            <ul>
+                                <li>Programação - Java e python - 60h</li>
+                                <li>Algoritmos e estrutura de dados - 60h</li>
+                                <li>Lógica para programação - 60h</li>
+                                <li>Banco de dados - 60h</li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            
-        </section>
-
-        <section class="terciary container">
-            <h1>Curricullum</h1>
-            <div class="grid">
-                <article class="card flex">
-                    <h2>Full Stack JavaScript</h2>
-                    <a href="https://www.theodinproject.com/">The Odin Project</a>
-                    <p>An 6-month open-source full stack coding curriculum designed to provide high-quality industry level training with an emphasis on hands-on projects.</p>
-                    <h4>Curriculum</h4>
-                    <div class="list flex">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            
-                        </ul>
-                        <ul>
-                            <li>Node.js</li>
-                            <!-- <li>Express</li>
-                            <li>MongoDB</li> -->
-                            <li>SQL</li>
-                            <li>Git</li>
-                            <li>Acessibility</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="card flex">
-                    <h2>Conquering Responsive Layouts</h2>
-                    <a href="https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts">Kevil Powell</a>
-                    <p>An 21-day challenge, by Kevin Powell. This challenge is structured as a drip course, with the content spread out over a 3-week period.</p>
-                    <h4>Curriculum</h4>
-                    <div class="list flex">
-                        <ul>
-                            <li>Responsive units</li>
-                            <li>Flexbox</li>
-                            <li>Mastering Media Queries</li>
-                        </ul>
-                        <ul>
-                        </ul>
-                    </div>
-                </article>
-                <article class="card flex">
-                    <h2>CS50's Introduction to Computer Science</h2>
-                    <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x">Harvard University</a>
-                    <p>A 6-month CS course focused on understanding algorithms and data structures, building and managing large-scale software projects, and mastering different programming languages such as C, Python, SQL, and JavaScript.</p>
-                    <h4>Curriculum</h4>
-                    <div class="list flex">
-                        <ul>
-                            <li>C</li>
-                            <li>Python</li>
-                            <li>SQL</li>
-                            <li>HTML, CSS</li>
-                        </ul>
-                        <ul>
-                            <li>Javascript</li>
-                            <li>Flask</li>
-                            <li>Django</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="card flex">
-                    <h2>Sistema de Informação</h2>
-                    <a href="https://www.ufpe.br/sistemas-de-informacao-bacharelado-cin">UFPE - Universidade Federal de Pernambuco</a>
-                    <p>A 6-month CS course focused on understanding algorithms and data structures, building and managing large-scale software projects, and mastering different programming languages such as C, Python, SQL, and JavaScript.</p>
-                    <h4>Curriculum</h4>
-                    <div class="list flex">
-                        <ul>
-                            <li>Programação - Java e python - 60h</li>
-                            <li>Algoritmos e estrutura de dados - 60h</li>
-                            <li>Lógica para programação - 60h</li>
-                            <li>Banco de dados - 60h</li>
-                        </ul>
-                    </div>
-                </article>
+                
             </div>
         </section>
+
+        <section id="contact" class="container">
+            <h1>Contact
+                <div class="divideSection"></div>
+            </h1>
+            
+            <div class="form">
+                <div class="flex">
+                    <a href="mailto:barbaradamas.dev@gmail.com" class="contact_email flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path fill="#96A9B2" d="M511.824 425.007c1.941-5.245-220.916-173.519-220.916-173.519c-27.9-20.589-42.574-20.913-70.164 0c0 0-222.532 168.138-220.659 173.311l-.045.038c.023.045.06.076.091.117a48.482 48.482 0 0 0 8.119 14.157c1.473 1.786 3.248 3.282 4.955 4.837l-.083.064c.136.121.317.177.453.298c7.235 6.454 16.359 10.634 26.495 11.827c.159.019.287.102.446.121h.612c1.541.147 3.006.517 4.584.517h420.721c20.717 0 38.269-13.028 45.241-31.291c.083-.136.211-.234.287-.374l-.137-.103z"/><path fill="#B9C5C6" d="M256.133 232.176L1.216 423.364V152.515c0-26.4 21.397-47.797 47.797-47.797h414.24c26.4 0 47.797 21.397 47.797 47.797v270.849L256.133 232.176z"/><path fill="#EDECE6" d="m4.189 135.896l217.645 170.949c27.47 20.271 41.918 20.591 69.083 0L508.22 136.167c-3.77-6.834-9.414-12.233-15.869-16.538l2.989-2.342c-7.295-6.641-16.62-10.946-26.971-12.058l-424.455.015c-10.322 1.097-19.662 5.417-26.942 12.043l2.967 2.313c-6.38 4.245-11.972 9.551-15.75 16.296z"/><path fill="#DCE2E2" d="M4.118 136.254C2.207 141.419 221.63 307.099 221.63 307.099c27.47 20.271 41.918 20.591 69.083 0c0 0 219.103-165.546 217.258-170.64l.045-.037c-.022-.045-.059-.074-.089-.115a47.732 47.732 0 0 0-7.994-13.939c-1.45-1.759-3.198-3.231-4.878-4.763l.082-.063c-.134-.119-.312-.175-.446-.294c-7.124-6.354-16.107-10.47-26.086-11.645c-.156-.019-.283-.1-.439-.119h-.602c-1.517-.145-2.96-.509-4.514-.509H48.81c-20.398 0-37.68 12.828-44.543 30.809c-.082.134-.208.231-.283.368l.134.102z"/><path fill="#597B91" d="M291.401 154.645h-38.632a6.155 6.155 0 0 0-6.155 6.155v21.722a6.155 6.155 0 0 0 6.155 6.155h31.415a6.155 6.155 0 0 1 6.155 6.155v11.616a6.155 6.155 0 0 1-6.155 6.155h-31.415a6.155 6.155 0 0 0-6.155 6.155v23.578a6.155 6.155 0 0 0 6.155 6.155h41.316a6.155 6.155 0 0 1 6.155 6.155v12.441a6.155 6.155 0 0 1-6.155 6.155h-75.76a6.155 6.155 0 0 1-6.155-6.155V136.461a6.155 6.155 0 0 1 6.155-6.155h74.81c3.749 0 6.627 3.322 6.092 7.033l-1.733 12.028a6.156 6.156 0 0 1-6.093 5.278z"/></svg>
+                        barbaradamas.dev@gmail.com</a>
+                    <a href="http://t.me/barbaradamasceno" class="contact_phone flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><defs><linearGradient id="logosTelegram0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#2AABEE"/><stop offset="100%" stop-color="#229ED9"/></linearGradient></defs><path fill="url(#logosTelegram0)" d="M128 0C94.06 0 61.48 13.494 37.5 37.49A128.038 128.038 0 0 0 0 128c0 33.934 13.5 66.514 37.5 90.51C61.48 242.506 94.06 256 128 256s66.52-13.494 90.5-37.49c24-23.996 37.5-56.576 37.5-90.51c0-33.934-13.5-66.514-37.5-90.51C194.52 13.494 161.94 0 128 0Z"/><path fill="#FFF" d="M57.94 126.648c37.32-16.256 62.2-26.974 74.64-32.152c35.56-14.786 42.94-17.354 47.76-17.441c1.06-.017 3.42.245 4.96 1.49c1.28 1.05 1.64 2.47 1.82 3.467c.16.996.38 3.266.2 5.038c-1.92 20.24-10.26 69.356-14.5 92.026c-1.78 9.592-5.32 12.808-8.74 13.122c-7.44.684-13.08-4.912-20.28-9.63c-11.26-7.386-17.62-11.982-28.56-19.188c-12.64-8.328-4.44-12.906 2.76-20.386c1.88-1.958 34.64-31.748 35.26-34.45c.08-.338.16-1.598-.6-2.262c-.74-.666-1.84-.438-2.64-.258c-1.14.256-19.12 12.152-54 35.686c-5.1 3.508-9.72 5.218-13.88 5.128c-4.56-.098-13.36-2.584-19.9-4.708c-8-2.606-14.38-3.984-13.82-8.41c.28-2.304 3.46-4.662 9.52-7.072Z"/></svg>
+                        @barbaradamasceno</a>
+                </div>
+                <form action="" method="post">
+                    
+                    <input type="text" class="name" id="name" placeholder=" ">
+                    <label class="label" for="name">Your name</label>
+                    <br>
+                    <input type="email" class="email" id="email" placeholder=" ">
+                    <label class="label" for="email">Your email</label>
+                    <br>
+                    <textarea name="" class="message" id="message"  cols="30" rows="10" placeholder=" "></textarea>
+                    <label class="label" for="message">Your message</label>
+                    <br>
+                    <button class="btn-principal" type="submit">Send message</button>
+                </form>
+                
+            </div>
+        </section>
+
+        <div class="fixed">
+
+            
+
+            <div class="totop" id="totop">
+                <a href="#topo">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15 20H9v-8H4.16L12 4.16L19.84 12H15v8Z"/></svg></button>
+                </a>
+            </div>
+
+        </div>
     </main>
+
+    <footer>
+        <div class="social-media flex">
+            <a href="https://github.com/barbaradamasdev"><img src="images/icons/github.png" alt="Icone do Github"></a>
+            <a href="https://www.linkedin.com/in/barbaradamascenodev/"><img src="images/icons/linkedin.png" alt="Icone do LikedIn"></a>
+            <a href="https://www.instagram.com/barbaradamasceno.dev/"><img src="images/icons/instagram.png" alt="Icone da Instagram"></a>
+        </div>
+        <p>Designed and Developed by Barbara Damasceno</p>
+    </footer>
 <script src="script.js"></script>
 </body>
 </html>
