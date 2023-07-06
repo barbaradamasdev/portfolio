@@ -63,3 +63,182 @@ changeMode.addEventListener('change', function (){
     }
 
 })
+
+
+
+// Data language
+
+let navabout = document.querySelector('.title-about'),
+    navprojects = document.querySelector('.title-project'),
+    navcontact = document.querySelector('.title-contact')
+    introdescription1 = document.querySelector('.intro-description1'),
+    introdescription2 = document.querySelector('.intro-description2'),
+    introdescription3 = document.querySelector('.intro-description3'),
+    introbtnprincipal = document.querySelector('.intro-btn-principal'),
+    introbtnsecondary = document.querySelector('.intro-btn-secondary'),
+
+    sectionabouttitle = document.querySelector('.sectionAboutTitle'),
+    projectdescription = document.querySelector('.projectDescription'),
+
+    sectionskillstitle = document.querySelector('.sectionSkillsTitle'),
+    cardtitle1 = document.querySelector('#card1 .cardtitle'),
+    cardtitle2 = document.querySelector('#card2 .cardtitle'),
+    cardtitle3 = document.querySelector('#card3 .cardtitle'),
+    cardtitle4 = document.querySelector('#card4 .cardtitle'),
+    
+    cardsubtitle1 = document.querySelector('#card1 .cardSubtitle'),
+    cardsubtitle2 = document.querySelector('#card2 .cardSubtitle'),
+    cardsubtitle3 = document.querySelector('#card3 .cardSubtitle'),
+    cardsubtitle4 = document.querySelector('#card4 .cardSubtitle'),
+    
+    carddescription1 = document.querySelector('#card1 .cardDescription'),
+    carddescription2 = document.querySelector('#card2 .cardDescription'),
+    carddescription3 = document.querySelector('#card3 .cardDescription'),
+    carddescription4 = document.querySelector('#card4 .cardDescription'),
+
+    sectioncontacttitle = document.querySelector('.sectionContactTitle'),
+    inputname = document.querySelector('.inputname'),
+    inputemail = document.querySelector('.inputemail'),
+    inputmessage = document.querySelector('.inputmessage'),
+    btnsend = document.querySelector('.btnsend'),
+    
+    footertext = document.querySelector('.footer-text');
+    
+    
+// Toogle language option
+function toggleLanguage () {
+    document.getElementById('language2').classList.toggle('openSelection');
+    console.log('entrou')
+}
+
+
+function changeLanguage(answer) {
+    let language = document.getElementById('language');
+    let selected = language.options[language.selectedIndex].value;
+    
+    
+    /* let selected = answer; */
+    /* if (answer === 'en') {
+        document.getElementById('select').style.top ='0px'
+        console.log('Idioma: EN')
+    } else if (answer === 'pt') {
+        document.getElementById('select').style.top ='-45px'
+        console.log('Idioma: PT')
+    } */
+
+
+    navabout.textContent = data[selected].navabout;
+    navprojects.textContent = data[selected].navprojects;
+    navcontact.textContent = data[selected].navcontact;
+;
+    introdescription1.textContent = data[selected].introdescription1;
+    introdescription2.textContent = data[selected].introdescription2;
+    introdescription3.textContent = data[selected].introdescription3;
+    introbtnprincipal.textContent = data[selected].introbtnprincipal;
+    introbtnsecondary.textContent = data[selected].introbtnsecondary;
+
+    sectionabouttitle.textContent = data[selected].sectionabouttitle;
+    projectdescription.textContent = data[selected].projectdescription;
+
+    sectionskillstitle.textContent = data[selected].sectionskillstitle;
+
+    cardtitle1.textContent = data[selected].cardtitle1;
+    cardtitle2.textContent = data[selected].cardtitle2;
+    cardtitle3.textContent = data[selected].cardtitle3;
+    cardtitle4.textContent = data[selected].cardtitle4;
+    
+    cardsubtitle1.textContent = data[selected].cardsubtitle1;
+    cardsubtitle2.textContent = data[selected].cardsubtitle2;
+    cardsubtitle3.textContent = data[selected].cardsubtitle3;
+    cardsubtitle4.textContent = data[selected].cardsubtitle4;
+
+    carddescription1.textContent = data[selected].carddescription1;
+    carddescription2.textContent = data[selected].carddescription2;
+    carddescription3.textContent = data[selected].carddescription3;
+    carddescription4.textContent = data[selected].carddescription4;
+
+    sectioncontacttitle.textContent = data[selected].sectioncontacttitle;
+    inputname.textContent = data[selected].inputname;
+    inputemail.textContent = data[selected].inputemail;
+    inputmessage.textContent = data[selected].inputmessage;
+    btnsend.textContent = data[selected].btnsend;
+
+    footertext.textContent = data[selected].footertext;
+}
+
+let data = {
+    pt: {
+        navabout: 'Sobre',
+        navprojects: 'Projetos',
+        navcontact:'Contato',
+
+        introdescription1: 'Olá, sou Bárbara Damasceno. Desenvolvedora front-end, atualmente moro em Recife, Brasil.',
+        introdescription2: 'Desde criança sempre tive contato e afinidade com tecnologia, jogos, internet além do fato de podermos construir e manipular coisas. Quando estava quase na metade da minha graduação em Sistema de Informação, a vida me levou ao empreendedorismo e por isso dei uma pausa nos estudos.',
+        introdescription3: 'Em dezembro de 2022 voltei para a área, desenvolvendo sites e estudando programação com mais profundidade. Estou aberta a colaborar em projetos interessantes como desenvolvedora.',
+        introbtnprincipal: 'Fala comigo',
+        introbtnsecondary: 'Veja meu portfolio',
+
+        sectionabouttitle: 'Projetos',
+        projectdescription: 'dddddddddddddddddd',
+
+        sectionskillstitle: 'Tecnologias e experiências',
+        cardtitle1: 'Full Stack JavaScript',
+        cardsubtitle1: 'The Odin Project',
+        carddescription1: 'Um curso open-source focado em programação fullstackcom duração de 6 meses projetado para fornecer treinamento de nível industrial de alta qualidade com ênfase em projetos práticos.',
+        cardtitle2: 'Conquistando Layouts Responsivos',
+        cardsubtitle2: 'Kevil Powell',
+        carddescription2: 'Um desafio de 21 dias, por Kevin Powell.',
+        cardtitle3: 'CS50 Introdução a Ciência da Computação',
+        cardsubtitle3: 'Universidade de Havard',
+        carddescription3: 'Um curso de CS de 6 meses focado na compreensão de algoritmos e estruturas de dados, construção e gerenciamento de projetos de software em larga escala e domínio de diferentes linguagens de programação, como C, Python, SQL e JavaScript.',
+        cardtitle4: 'Sistema de Informação',
+        cardsubtitle4: 'UFPE - Universidade Federal de Pernambuco',
+        carddescription4: 'Cursei metade do curso de Sistema de Informação como cadeiras complementares em de 2014 a 2016, chegando a mais de 240h de carga horária.',
+
+        sectioncontacttitle: 'Contato',
+        inputname: 'Seu nome',
+        inputemail: 'Seu email',
+        inputmessage: 'Sua mensagem',
+        btnsend: 'Enviar mensagem',
+
+        footertext: 'Criado e desenvolvido por Barbara Damasceno'
+    },
+    en: {
+        navabout: 'About',
+        navprojects: 'Projects',
+        navcontact:'Contact',
+
+        introdescription1: "Hello, I'm Barbara Damasceno. Front End developer based in Recife, Brazil.",
+        introdescription2: "Since I was a child, I have always had contact and affinity with technology, games, internet and the fact that we can build and manipulate things. When I was almost halfway through my graduation in the area, life led me to entrepreneurship and that's why I took a break from studying. ",        
+        introdescription3: "In December 2022 I returned to the area, developing websites and studying programming in more depth. I'm open to collaborating on interesting projects as a developer.",
+        introbtnprincipal: 'Hire me',
+        introbtnsecondary: 'View my portfolio',
+
+        sectionabouttitle: 'Projects',
+        projectdescription: 'dddddddddddddddddd',
+
+        sectionskillstitle: 'Skills and Experiences ',
+        cardtitle1: 'Full Stack JavaScript',
+        cardsubtitle1: 'The Odin Project',
+        carddescription1: 'An 6-month open-source full stack coding curriculum designed to provide high-quality industry level training with an emphasis on hands-on projects.',
+        cardtitle2: 'Conquering Responsive Layouts',
+        cardsubtitle2: 'Kevil Powell',
+        carddescription2: 'An 21-day challenge, by Kevin Powell.',
+        cardtitle3: "CS50's Introduction to Computer Science",
+        cardsubtitle3: 'Harvard University',
+        carddescription3: 'A 6-month CS course focused on understanding algorithms and data structures, building and managing large-scale software projects, and mastering different programming languages such as C, Python, SQL, and JavaScript.',
+        cardtitle4: 'Information Systems',
+        cardsubtitle4: 'UFPE - Federal University of Pernambuco (Brazil)',
+        carddescription4:  'I attended half of the Information System course as complementary classes from 2014 to 2016, reaching more than 240 hours of workload.',
+
+
+        sectioncontacttitle: 'Contact',
+        inputname: 'Your name',
+        inputemail: 'Your email',
+        inputmessage: 'Your message',
+        btnsend: 'Send message',
+
+        footertext: 'Designed and Developed by Barbara Damasceno'
+    }
+
+}

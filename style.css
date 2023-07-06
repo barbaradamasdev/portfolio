@@ -115,7 +115,6 @@ h1 {
   font-family: var(--ff-logo);
   margin: 20px 0;
   font-size: 24px;
-  position: relative;
 }
 h1::after {
   content: " }";
@@ -125,14 +124,14 @@ h1::before {
   content: "{ ";
 }
 
-.divideSection {
-  position: absolute;
-  width: 950px;
+.highlight {
+  position: relative;
+  width: 1300px;
   height: 40px;
   background-color: var(--color5);
   opacity: 0.3;
-  left: -870px;
-  top: -20px;
+  left: -1100px;
+  top: -70px;
 }
 
 h1 {
@@ -335,8 +334,23 @@ section {
   padding-bottom: 15px;
 }
 
-#about {
+#about .flex {
   flex-direction: column;
+  align-items: center;
+}
+
+.intro-description1 {
+  position: relative;
+}
+
+.intro-description1::after {
+  content: "";
+  background-image: url(images/icons/pin.png);
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
 }
 
 .btns {
@@ -575,7 +589,7 @@ section {
   position: relative;
   border-radius: 20px;
   width: 90px;
-  height: 40px;
+  height: 35px;
   background-color: var(--color10);
   outline: 2px solid var(--color11);
   align-items: center;
@@ -586,18 +600,18 @@ section {
   position: absolute;
   opacity: 1;
   box-shadow: 0px 0px 3px 1px var(--bg);
-  height: 35px;
-  width: 50px;
+  height: 30px;
+  width: 45px;
   border-radius: 20px;
   background-color: var(--fc);
   top: -40px;
-  right: 0px;
-  transition: all 300ms;
+  right: -10px;
+  transition: right 300ms;
   cursor: pointer;
 }
 
 #pointer.dark {
-  right: 34px;
+  right: 30px;
 }
 
 .change-theme {
@@ -606,15 +620,15 @@ section {
 
 .mode-moon {
   position: relative;
-  top: -32px;
+  top: -37px;
   left: 10px;
   cursor: pointer;
 }
 
 .mode-sun {
   position: relative;
-  top: -36px;
-  right: 2px;
+  top: -37px;
+  right: -2px;
   cursor: pointer;
 }
 
@@ -650,6 +664,74 @@ section {
 /* Form */
 /* Form */
 /* Form */
+
+/* Language */
+
+.language {
+  margin: 0 10px;
+}
+
+.language2 {
+  position: fixed;
+  right: 0;
+  top: 100px;
+
+  /* border: 1px solid white; */
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  height: 55px;
+  width: 210px;
+  transform: scale(0.8);
+  color: var(--lightcolor);
+  background-color: var(--color10);
+  /* overflow: hidden; */
+}
+.openSelection .language2 {
+  height: 150px;
+}
+
+.language2 .flex {
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  position: absolute;
+  right: 15px;
+  top: 22px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--lightcolor);
+  cursor: pointer;
+}
+
+/* #select {
+  position: relative;
+  top: -45px;
+} */
+
+.openSelection {
+  height: 100px;
+  margin-top: -4px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: var(--color5);
+  font-weight: 700;
+}
+
+.visible {
+  display: inherit;
+}
+
+.invisible {
+  display: none;
+}
 
 /* Label and if empty */
 form label {
@@ -799,6 +881,10 @@ footer p {
     flex-direction: row;
   }
 
+  #about .flex {
+    flex-direction: row;
+  }
+
   .project {
     flex-direction: row;
     gap: 30px;
@@ -862,10 +948,9 @@ footer p {
     display: none;
   }
 
-  #about {
-    margin: auto;
-    justify-content: space-between;
-    height: 600px;
+  .btns {
+    justify-content: space-around;
+    gap: 5px;
   }
 
   .profile {
@@ -892,10 +977,6 @@ footer p {
   .nav-secondary ul {
     padding-left: 50px;
     margin: auto;
-  }
-
-  #about {
-    flex-direction: row;
   }
 
   main {
