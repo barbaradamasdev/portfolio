@@ -192,7 +192,7 @@ let data = {
         cardsubtitle3: 'Universidade de Havard',
         carddescription3: 'Um curso de CS de 6 meses focado na compreensão de algoritmos e estruturas de dados, construção e gerenciamento de projetos de software em larga escala e domínio de diferentes linguagens de programação, como C, Python, SQL e JavaScript.',
         cardtitle4: 'Sistema de Informação',
-        cardsubtitle4: 'UFPE - Universidade Federal de Pernambuco',
+        cardsubtitle4: 'UFPE',
         carddescription4: 'Cursei metade do curso de Sistema de Informação como cadeiras complementares em de 2014 a 2016, chegando a mais de 240h de carga horária.',
 
         sectioncontacttitle: 'Contato',
