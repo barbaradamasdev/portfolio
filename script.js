@@ -84,6 +84,7 @@ let navabout = document.querySelector('.title-about'),
     projectdescription4 = document.querySelector('.projectDescription4'),
     projectdescription5 = document.querySelector('.projectDescription5'),
     projectdescription6 = document.querySelector('.projectDescription6'),
+    projectdescription7 = document.querySelector('.projectDescription7'),
 
     sectionskillstitle = document.querySelector('.sectionSkillsTitle'),
     cardtitle1 = document.querySelector('#card1 .cardtitle'),
@@ -148,6 +149,7 @@ function changeLanguage(answer) {
     projectdescription4.textContent = data[selected].projectdescription4;
     projectdescription5.textContent = data[selected].projectdescription5;
     projectdescription6.textContent = data[selected].projectdescription6;
+    projectdescription7.textContent = data[selected].projectdescription7;
 
     sectionskillstitle.textContent = data[selected].sectionskillstitle;
 
@@ -194,6 +196,7 @@ let data = {
         projectdescription4: 'Clone do blog da Globo News para conclusão do curso de Angular do Santander Bootcamp 2023 - Fullstack Java+Angular',
         projectdescription5: 'Pokedex utilizando uma API, projeto de conclusão do curso de Javascript do Santander Bootcamp 2023 - Fullstack Java+Angular',
         projectdescription6: 'Portfolio de um tatuador utilizando front end basico, landing page estática, mobile-first',
+        projectdescription7: 'Esse portfolio foi feito pensando em mobile-first e usando vanilla javascript.',
 
         sectionskillstitle: 'Tecnologias e experiências',
         cardtitle1: 'Full Stack JavaScript',
@@ -235,6 +238,7 @@ let data = {
         projectdescription4: 'Clone of the Globo News blog to complete the Santander Bootcamp 2023 Angular course - Fullstack Java+Angular',
         projectdescription5: 'Pokedex using an API, completion project for the Santander Bootcamp 2023 Javascript course - Fullstack Java+Angular',
         projectdescription6: 'Portfolio of a tattoo artist using basic front end, static landing page, mobile-first',
+        projectdescription7: 'This portfolio was made with mobile-first, vanilla javascript.',
 
         sectionskillstitle: 'Skills and Experiences ',
         cardtitle1: 'Full Stack JavaScript',
