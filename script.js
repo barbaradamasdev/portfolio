@@ -87,20 +87,20 @@ let navabout = document.querySelector('.title-about'),
     projectdescription7 = document.querySelector('.projectDescription7'),
 
     sectionskillstitle = document.querySelector('.sectionSkillsTitle'),
-    cardtitle1 = document.querySelector('#card1 .cardtitle'),
-    cardtitle2 = document.querySelector('#card2 .cardtitle'),
-    cardtitle3 = document.querySelector('#card3 .cardtitle'),
-    cardtitle4 = document.querySelector('#card4 .cardtitle'),
+    cardtitle1 = document.querySelector('#card1 .cardtitle1'),
+    cardtitle2 = document.querySelector('#card2 .cardtitle2'),
+    cardtitle3 = document.querySelector('#card3 .cardtitle3'),
+    cardtitle4 = document.querySelector('#card4 .cardtitle4'),
     
-    cardsubtitle1 = document.querySelector('#card1 .cardSubtitle'),
-    cardsubtitle2 = document.querySelector('#card2 .cardSubtitle'),
-    cardsubtitle3 = document.querySelector('#card3 .cardSubtitle'),
-    cardsubtitle4 = document.querySelector('#card4 .cardSubtitle'),
+    cardsubtitle1 = document.querySelector('#card1 .cardSubtitle1'),
+    cardsubtitle2 = document.querySelector('#card2 .cardSubtitle2'),
+    cardsubtitle3 = document.querySelector('#card3 .cardSubtitle3'),
+    cardsubtitle4 = document.querySelector('#card4 .cardSubtitle4'),
     
-    carddescription1 = document.querySelector('#card1 .cardDescription'),
-    carddescription2 = document.querySelector('#card2 .cardDescription'),
-    carddescription3 = document.querySelector('#card3 .cardDescription'),
-    carddescription4 = document.querySelector('#card4 .cardDescription'),
+    carddescription1 = document.querySelector('#card1 .cardDescription1'),
+    carddescription2 = document.querySelector('#card2 .cardDescription2'),
+    carddescription3 = document.querySelector('#card3 .cardDescription3'),
+    carddescription4 = document.querySelector('#card4 .cardDescription4'),
 
     sectioncontacttitle = document.querySelector('.sectionContactTitle'),
     inputname = document.querySelector('.inputname'),
@@ -158,21 +158,22 @@ function changeLanguage(answer) {
     //cardtitle3.textContent = data[selected].cardtitle3;
     cardtitle4.textContent = data[selected].cardtitle4;
     
-    cardsubtitle1.textContent = data[selected].cardsubtitle1;
+    //cardsubtitle1.textContent = data[selected].cardsubtitle1;
     //cardsubtitle2.textContent = data[selected].cardsubtitle2;
-    cardsubtitle3.textContent = data[selected].cardsubtitle3;
+    //cardsubtitle3.textContent = data[selected].cardsubtitle3;
     cardsubtitle4.textContent = data[selected].cardsubtitle4;
 
-    carddescription1.textContent = data[selected].carddescription1;
-    carddescription2.textContent = data[selected].carddescription2;
-    carddescription3.textContent = data[selected].carddescription3;
+    
+    //carddescription1.textContent = data[selected].carddescription1;
+    //carddescription2.textContent = data[selected].carddescription2;
+    //carddescription3.textContent = data[selected].carddescription3;
     carddescription4.textContent = data[selected].carddescription4;
-
+    
     sectioncontacttitle.textContent = data[selected].sectioncontacttitle;
-    inputname.textContent = data[selected].inputname;
-    inputemail.textContent = data[selected].inputemail;
-    inputmessage.textContent = data[selected].inputmessage;
-    btnsend.textContent = data[selected].btnsend;
+    //inputname.textContent = data[selected].inputname;
+    //inputemail.textContent = data[selected].inputemail;
+    //inputmessage.textContent = data[selected].inputmessage;
+    //btnsend.textContent = data[selected].btnsend;
 
     footertext.textContent = data[selected].footertext;
 }
