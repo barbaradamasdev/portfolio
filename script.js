@@ -203,7 +203,7 @@ let data = {
         cardsubtitle3: 'DIO',
         carddescription3: 'Bootcamp na trilha de Fullstack Java + Angular, com duração de 2 meses.',
         cardtitle4: 'Sistema de Informação',
-        cardsubtitle4: 'UFPE - Universidade Federal de Pernambuco',
+        cardsubtitle4: 'UFPE',
         carddescription4: 'Cursei metade do curso de Sistema de Informação como cadeiras complementares em de 2014 a 2016, chegando a mais de 240h de carga horária.',
 
         sectioncontacttitle: 'Contato',
