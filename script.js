@@ -83,6 +83,7 @@ let navabout = document.querySelector('.title-about'),
     projectdescription3 = document.querySelector('.projectDescription3'),
     projectdescription4 = document.querySelector('.projectDescription4'),
     projectdescription5 = document.querySelector('.projectDescription5'),
+    projectdescription6 = document.querySelector('.projectDescription6'),
 
     sectionskillstitle = document.querySelector('.sectionSkillsTitle'),
     cardtitle1 = document.querySelector('#card1 .cardtitle'),
