@@ -146,6 +146,7 @@ function changeLanguage(answer) {
     projectdescription3.textContent = data[selected].projectdescription3;
     projectdescription4.textContent = data[selected].projectdescription4;
     projectdescription5.textContent = data[selected].projectdescription5;
+    projectdescription6.textContent = data[selected].projectdescription5;
 
     sectionskillstitle.textContent = data[selected].sectionskillstitle;
 
@@ -244,7 +245,7 @@ let data = {
         cardtitle3: "Santander Bootcamp 2023 - Fullstack Java+Angular",
         cardsubtitle3: 'DIO',
         carddescription3: 'Bootcamp on the Fullstack Java + Angular track, lasting 2 months, ending in 2023.',
-        cardtitle4: 'Information Systems',
+        cardtitle4: 'Computer Science',
         cardsubtitle4: 'UFPE - Federal University of Pernambuco (Brazil)',
         carddescription4:  'I attended half of the Information System course as complementary classes from 2014 to 2016, reaching more than 240 hours of workload.',
 
