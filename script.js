@@ -153,9 +153,9 @@ function changeLanguage(answer) {
 
     sectionskillstitle.textContent = data[selected].sectionskillstitle;
 
-    cardtitle1.textContent = data[selected].cardtitle1;
+    //cardtitle1.textContent = data[selected].cardtitle1;
     //cardtitle2.textContent = data[selected].cardtitle2;
-    cardtitle3.textContent = data[selected].cardtitle3;
+    //cardtitle3.textContent = data[selected].cardtitle3;
     cardtitle4.textContent = data[selected].cardtitle4;
     
     cardsubtitle1.textContent = data[selected].cardsubtitle1;
