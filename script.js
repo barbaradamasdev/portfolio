@@ -179,7 +179,7 @@ let data = {
         navprojects: 'Projetos',
         navcontact:'Contato',
 
-        introdescription1: 'Olá, sou Bárbara Damasceno. Desenvolvedora front-end, atualmente moro em Recife, Brasil.',
+        introdescription1: 'Olá, sou Bárbara Damasceno. Desenvolvedora Full Stack, atualmente moro em Recife, Brasil.',
         introdescription2: 'Desde criança sempre tive contato e afinidade com tecnologia, jogos, internet além do fato de podermos construir e manipular coisas. Quando estava quase na metade da minha graduação em Sistema de Informação, a vida me levou ao empreendedorismo e por isso dei uma pausa nos estudos.',
         introdescription3: 'Em dezembro de 2022 voltei para a área, desenvolvendo sites e estudando programação com mais profundidade. Estou aberta a colaborar em projetos interessantes como desenvolvedora.',
         introbtnprincipal: 'Fala comigo',
@@ -219,7 +219,7 @@ let data = {
         navprojects: 'Projects',
         navcontact:'Contact',
 
-        introdescription1: "Hello, I'm Barbara Damasceno. Front End developer based in Recife, Brazil.",
+        introdescription1: "Hello, I'm Barbara Damasceno. Full Stack developer based in Recife, Brazil.",
         introdescription2: "Since I was a child, I have always had contact and affinity with technology, games, internet and the fact that we can build and manipulate things. When I was almost halfway through my graduation in the area, life led me to entrepreneurship and that's why I took a break from studying. ",        
         introdescription3: "In December 2022 I returned to the area, developing websites and studying programming in more depth. I'm open to collaborating on interesting projects as a developer.",
         introbtnprincipal: 'Hire me',
