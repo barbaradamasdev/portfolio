@@ -146,7 +146,7 @@ function changeLanguage(answer) {
     //projectdescription3.textContent = data[selected].projectdescription3;
     projectdescription4.textContent = data[selected].projectdescription4;
     projectdescription5.textContent = data[selected].projectdescription5;
-    projectdescription6.textContent = data[selected].projectdescription5;
+    projectdescription6.textContent = data[selected].projectdescription6;
 
     sectionskillstitle.textContent = data[selected].sectionskillstitle;
 
