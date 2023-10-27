@@ -78,7 +78,11 @@ let navabout = document.querySelector('.title-about'),
     introbtnsecondary = document.querySelector('.intro-btn-secondary'),
 
     sectionabouttitle = document.querySelector('.sectionAboutTitle'),
-    projectdescription = document.querySelector('.projectDescription'),
+    projectdescription1 = document.querySelector('.projectDescription1'),
+    projectdescription2 = document.querySelector('.projectDescription2'),
+    projectdescription3 = document.querySelector('.projectDescription3'),
+    projectdescription4 = document.querySelector('.projectDescription4'),
+    projectdescription5 = document.querySelector('.projectDescription5'),
 
     sectionskillstitle = document.querySelector('.sectionSkillsTitle'),
     cardtitle1 = document.querySelector('#card1 .cardtitle'),
@@ -108,7 +112,6 @@ let navabout = document.querySelector('.title-about'),
 // Toogle language option
 function toggleLanguage () {
     document.getElementById('language2').classList.toggle('openSelection');
-    console.log('entrou')
 }
 
 
@@ -138,7 +141,11 @@ function changeLanguage(answer) {
     introbtnsecondary.textContent = data[selected].introbtnsecondary;
 
     sectionabouttitle.textContent = data[selected].sectionabouttitle;
-    projectdescription.textContent = data[selected].projectdescription;
+    projectdescription1.textContent = data[selected].projectdescription1;
+    projectdescription2.textContent = data[selected].projectdescription2;
+    projectdescription3.textContent = data[selected].projectdescription3;
+    projectdescription4.textContent = data[selected].projectdescription4;
+    projectdescription5.textContent = data[selected].projectdescription5;
 
     sectionskillstitle.textContent = data[selected].sectionskillstitle;
 
@@ -179,7 +186,11 @@ let data = {
         introbtnsecondary: 'Veja meu portfolio',
 
         sectionabouttitle: 'Projetos',
-        projectdescription: 'dddddddddddddddddd',
+        projectdescription1: 'Website com temática espacial, desafio criado pelo FrontEnd Mentor',
+        projectdescription2: 'Projeto de conclusão de curso de Javascript do Odin Project. Utilizei JS, HTML e CSS para fazer um jogo de pedra, papel e tesoura',
+        projectdescription3: 'Desafio de Landing Page do FrontEndMentor',
+        projectdescription4: 'Clone do blog da Globo News para conclusão do curso de Angular do Santander Bootcamp 2023 - Fullstack Java+Angular',
+        projectdescription5: 'Pokedex using an API, completion project for the Santander Bootcamp 2023 Javascript course - Fullstack Java+Angular',
 
         sectionskillstitle: 'Tecnologias e experiências',
         cardtitle1: 'Full Stack JavaScript',
@@ -188,9 +199,9 @@ let data = {
         cardtitle2: 'Conquistando Layouts Responsivos',
         cardsubtitle2: 'Kevil Powell',
         carddescription2: 'Um desafio de 21 dias, por Kevin Powell.',
-        cardtitle3: 'CS50 Introdução a Ciência da Computação',
-        cardsubtitle3: 'Universidade de Havard',
-        carddescription3: 'Um curso de CS de 6 meses focado na compreensão de algoritmos e estruturas de dados, construção e gerenciamento de projetos de software em larga escala e domínio de diferentes linguagens de programação, como C, Python, SQL e JavaScript.',
+        cardtitle3: 'Santander Bootcamp 2023 - Fullstack Java+Angular',
+        cardsubtitle3: 'DIO',
+        carddescription3: 'Bootcamp na trilha de Fullstack Java + Angular, com duração de 2 meses.',
         cardtitle4: 'Sistema de Informação',
         cardsubtitle4: 'UFPE - Universidade Federal de Pernambuco',
         carddescription4: 'Cursei metade do curso de Sistema de Informação como cadeiras complementares em de 2014 a 2016, chegando a mais de 240h de carga horária.',
@@ -215,7 +226,11 @@ let data = {
         introbtnsecondary: 'View my portfolio',
 
         sectionabouttitle: 'Projects',
-        projectdescription: 'dddddddddddddddddd',
+        projectdescription1: 'Space-themed website, challenge created by FrontEnd Mentor',
+        projectdescription2: 'Odin Project Javascript course completion project. I used JS, HTML and CSS to make a game of rock, paper, scissors',
+        projectdescription3: 'FrontEndMentor Landing Page Challenge',
+        projectdescription4: 'Clone of the Globo News blog to complete the Santander Bootcamp 2023 Angular course - Fullstack Java+Angular',
+        projectdescription5: 'Pokedex using an API, completion project for the Santander Bootcamp 2023 Javascript course - Fullstack Java+Angular',
 
         sectionskillstitle: 'Skills and Experiences ',
         cardtitle1: 'Full Stack JavaScript',
@@ -224,9 +239,9 @@ let data = {
         cardtitle2: 'Conquering Responsive Layouts',
         cardsubtitle2: 'Kevil Powell',
         carddescription2: 'An 21-day challenge, by Kevin Powell.',
-        cardtitle3: "CS50's Introduction to Computer Science",
-        cardsubtitle3: 'Harvard University',
-        carddescription3: 'A 6-month CS course focused on understanding algorithms and data structures, building and managing large-scale software projects, and mastering different programming languages such as C, Python, SQL, and JavaScript.',
+        cardtitle3: "Santander Bootcamp 2023 - Fullstack Java+Angular",
+        cardsubtitle3: 'DIO',
+        carddescription3: 'Bootcamp on the Fullstack Java + Angular track, lasting 2 months.',
         cardtitle4: 'Information Systems',
         cardsubtitle4: 'UFPE - Federal University of Pernambuco (Brazil)',
         carddescription4:  'I attended half of the Information System course as complementary classes from 2014 to 2016, reaching more than 240 hours of workload.',
