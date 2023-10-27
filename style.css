@@ -115,6 +115,7 @@ h1 {
   font-family: var(--ff-logo);
   margin: 20px 0;
   font-size: 24px;
+  z-index: 1;
 }
 h1::after {
   content: " }";
@@ -161,17 +162,18 @@ img {
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
-  transition: color 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 .btn-principal:hover {
   color: var(--lightcolor);
+  transform: scale(1.1);
 }
 
 .btn-principal::before {
   content: "";
   position: absolute;
-  background: var(--darkcolor);
+  background: var(--color11);
   height: 100%;
   width: 100%;
   left: 0;
@@ -892,6 +894,10 @@ footer p {
 
   .invert {
     flex-direction: row-reverse;
+  }
+
+  .card {
+    min-height: 110px;
   }
 
   .destaque {
