@@ -184,9 +184,9 @@ let data = {
         navprojects: 'Projetos',
         navcontact:'Contato',
 
-        introdescription1: 'Olá, sou Bárbara Damasceno. Desenvolvedora Full Stack, atualmente moro em Recife, Brasil.',
-        introdescription2: 'Desde criança sempre tive contato e afinidade com tecnologia, jogos, internet além do fato de podermos construir e manipular coisas. Quando estava quase na metade da minha graduação em Sistema de Informação, a vida me levou ao empreendedorismo e por isso dei uma pausa nos estudos.',
-        introdescription3: 'Em dezembro de 2022 voltei para a área, desenvolvendo sites e estudando programação com mais profundidade. Estou aberta a colaborar em projetos interessantes como desenvolvedora.',
+        introdescription1: 'Olá, sou Babi, uma desenvolvedora fullstack com foco em frontend, atualmente moro em Recife, Brasil.',
+        introdescription2: 'Technology has always fascinated me since adolescence. Initially exploring the world of web design, I eventually followed my heart and dedicated myself to music, playing in orchestras and teaching the art to diverse audiences.',
+        introdescription3: 'Later on, life led me to pursue a degree in Information Systems, where I learned algorithms, databases, and Java. In the midst of my college journey, I founded a confectionery business, honing essential skills in listening to and solving customers' problems.In 2022, life called me back to technology. Since then, I've been studying intensively and falling in love with every moment of this journey.',
         introbtnprincipal: 'Fala comigo',
         introbtnsecondary: 'Veja meu portfolio',
 
@@ -226,9 +226,9 @@ let data = {
         navprojects: 'Projects',
         navcontact:'Contact',
 
-        introdescription1: "Hello, I'm Barbara Damasceno. Full Stack developer based in Recife, Brazil.",
-        introdescription2: "Since I was a child, I have always had contact and affinity with technology, games, internet and the fact that we can build and manipulate things. When I was almost halfway through my graduation in the area, life led me to entrepreneurship and that's why I took a break from studying. ",        
-        introdescription3: "In December 2022 I returned to the area, developing websites and studying programming in more depth. I'm open to collaborating on interesting projects as a developer.",
+        introdescription1: "Hello, I'm Babi, a fullstack developer with a focus on frontend. based in Recife, Brazil.",
+        introdescription2: "Technology has always fascinated me since adolescence. Initially exploring the world of web design, I eventually followed my heart and dedicated myself to music, playing in orchestras and teaching the art to diverse audiences. ",        
+        introdescription3: "Later on, life led me to pursue a degree in Information Systems, where I learned algorithms, databases, and Java. In the midst of my college journey, I founded a confectionery business, honing essential skills in listening to and solving customers' problems.In 2022, life called me back to technology. Since then, I've been studying intensively and falling in love with every moment of this journey.",
         introbtnprincipal: 'Hire me',
         introbtnsecondary: 'View my portfolio',
 
