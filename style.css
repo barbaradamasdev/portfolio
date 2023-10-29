@@ -444,10 +444,12 @@ section {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.336);
+  max-width: 60vw;
 }
 
 .description h2 {
   font-size: 30px;
+  margin-top: 100px;
 }
 
 .description .buttons > * {
@@ -890,6 +892,7 @@ footer p {
   .project {
     flex-direction: row;
     gap: 30px;
+    margin-top: 185px;
   }
 
   .invert {
