@@ -118,6 +118,7 @@ function toggleLanguage () {
 
 
 function changeLanguage(answer) {
+    toggleMenu();
     let language = document.getElementById('language');
     let selected = language.options[language.selectedIndex].value;
     
