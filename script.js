@@ -112,27 +112,10 @@ let navabout = document.querySelector('.title-about'),
     
     
 // Toogle language option
-function toggleLanguage () {
-    document.getElementById('language2').classList.toggle('openSelection');
-}
-
-
-function changeLanguage(answer) {
-    toggleMenu();
+function changeLanguage() {
     let language = document.getElementById('language');
     let selected = language.options[language.selectedIndex].value;
     
-    
-    /* let selected = answer; */
-    /* if (answer === 'en') {
-        document.getElementById('select').style.top ='0px'
-        console.log('Idioma: EN')
-    } else if (answer === 'pt') {
-        document.getElementById('select').style.top ='-45px'
-        console.log('Idioma: PT')
-    } */
-
-
     navabout.textContent = data[selected].navabout;
     navprojects.textContent = data[selected].navprojects;
     navcontact.textContent = data[selected].navcontact;
