@@ -128,7 +128,7 @@ function changeLanguage() {
 
     sectionabouttitle.textContent = data[selected].sectionabouttitle;
     projectdescription1.textContent = data[selected].projectdescription1;
-    //projectdescription2.textContent = data[selected].projectdescription2;
+    projectdescription2.textContent = data[selected].projectdescription2;
     //projectdescription3.textContent = data[selected].projectdescription3;
     projectdescription4.textContent = data[selected].projectdescription4;
     projectdescription5.textContent = data[selected].projectdescription5;
@@ -176,7 +176,7 @@ let data = {
 
         sectionabouttitle: 'Projetos',
         projectdescription1: 'Desenvolvi um site espacial, usando HTML, CSS e JavaScript vanilla para maior controle das ferramentas puras. Esse é um desafio do FrontEnd Mentor. Adoto sempre Mobile First e utilizei Flexbox, implementei animações e um menu "sanduíche" para facilitar a navegação na versão mobile. Priorizei a acessibilidade, enfatizando a hierarquia para garantir uma experiência inclusiva e acessível a todos os usuários.',
-        projectdescription2: 'Projeto de conclusão de curso de Javascript do Odin Project. Utilizei JS, HTML e CSS para fazer um jogo de pedra, papel e tesoura',
+        projectdescription2: 'Desenvolvimento de um sistema responsivo para gerenciamento de tarefas, aplicando conhecimentos nas linguagens básicas de front end e utilizando localStorage, seguindo diretrizes e wireframes propostos no desafio do curso. Consegui me tornar monitora do curso com a conclusão desse desafio.',
         projectdescription3: 'Desafio de Landing Page do FrontEndMentor',
         projectdescription4: 'Clonei um site de notícias, GloboNews, uma renomada plataforma nacional. Priorizei a responsividade e otimização para interações aprimoradas em dispositivos móveis. Utilizei Angular e TypeScript para uma abordagem robusta e eficiente no desenvolvimento, garantindo uma experiência de usuário fluida e envolvente.',
         projectdescription5: 'Desenvolvi uma biblioteca de Pokémon utilizando a API da Pokédex, empregando apenas HTML, CSS e JavaScript puro, sem a utilização de bibliotecas. Incluí uma barra de pesquisa para maior comodidade dos usuários. Dado o caráter comum do projeto, priorizei um estilo moderno, com cores suaves na estética.',
@@ -218,7 +218,7 @@ let data = {
 
         sectionabouttitle: 'Projects',
         projectdescription1: 'I developed a space-themed website using HTML, CSS, and vanilla JavaScript for greater control over pure tools. This is a challenge from FrontEnd Mentor. I always adopt a Mobile First approach, utilizing Flexbox, implementing animations, and a "sandwich" menu to enhance navigation on the mobile version. I prioritized accessibility, emphasizing hierarchy to ensure an inclusive and accessible experience for all users.',
-        projectdescription2: 'Projeto de conclusão de curso de Javascript do Odin Project. Utilizei JS, HTML e CSS para fazer um jogo de pedra, papel e tesoura',
+        projectdescription2: 'Developed a responsive task management system by applying skills in basic front-end languages and utilizing localStorage, following guidelines and wireframes proposed in the course challenge. Achieved the position of course monitor upon successful completion of this project.',
         projectdescription3: 'Desafio de Landing Page do FrontEndMentor',
         projectdescription4: 'I crafted a news website, a clone of GloboNews, a prominent national platform. Emphasizing responsiveness and enhanced interactions for mobile devices, I employed Angular and TypeScript for a robust and efficient development approach, ensuring a seamless and engaging user experience.',
         projectdescription5: 'A Pokémon library using the Pokédex API, using only HTML, CSS, and pure JavaScript without any libraries. I incorporated a search bar for user convenience. Given the commonplace nature of the project, I prioritized a modern aesthetic with gentle colors in the styling',
