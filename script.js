@@ -250,5 +250,3 @@ let data = {
     }
 
 }
-
-changeLanguage();
