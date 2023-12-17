@@ -161,7 +161,6 @@ function changeLanguage() {
 
     footertext.textContent = data[selected].footertext;
 }
-changeLanguage();
 
 let data = {
     pt: {
@@ -251,3 +250,5 @@ let data = {
     }
 
 }
+
+changeLanguage();
