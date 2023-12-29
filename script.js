@@ -85,6 +85,7 @@ let navabout = document.querySelector('.title-about'),
     projectdescription5 = document.querySelector('.projectDescription5'),
     projectdescription6 = document.querySelector('.projectDescription6'),
     projectdescription7 = document.querySelector('.projectDescription7'),
+    projectdescription8 = document.querySelector('.projectDescription8'),
 
     sectionskillstitle = document.querySelector('.sectionSkillsTitle'),
     cardtitle1 = document.querySelector('#card1 .cardtitle1'),
@@ -134,6 +135,7 @@ function changeLanguage() {
     projectdescription5.textContent = data[selected].projectdescription5;
     projectdescription6.textContent = data[selected].projectdescription6;
     projectdescription7.textContent = data[selected].projectdescription7;
+    projectdescription8.textContent = data[selected].projectdescription8;
 
     sectionskillstitle.textContent = data[selected].sectionskillstitle;
 
@@ -182,6 +184,7 @@ let data = {
         projectdescription5: 'Desenvolvi uma biblioteca de Pokémon utilizando a API da Pokédex, empregando apenas HTML, CSS e JavaScript puro, sem a utilização de bibliotecas. Incluí uma barra de pesquisa para maior comodidade dos usuários. Dado o caráter comum do projeto, priorizei um estilo moderno, com cores suaves na estética.',
         projectdescription6: 'Criei um portfólio para um tatuador, empregando HTML, CSS e JavaScript puro para um controle mais preciso. O design adota Grid e Flexbox, garantindo responsividade e seguindo a abordagem "mobile first". Implementei um menu "sanduíche" para facilitar a navegação em dispositivos móveis. A escolha por um site estático, sem bibliotecas, visa proporcionar um maior domínio nas bases. O site foca nas imagens afim de mostrar o trabalho do artista.',
         projectdescription7: 'Desenvolvi meu próprio portfólio seguindo a abordagem "mobile first" com foco em responsividade. Incluí um darkmode e a capacidade de alterar o idioma do site, além de animações e interações para proporcionar uma experiência visualmente agradável.',
+        projectdescription8: 'Curadoria para entusiastas de filmes e séries. Desenvolvido utilizando Angular v.17, o site integra uma API da OMDB para fornecer aos usuários recomendações personalizadas, avaliações e informações detalhadas sobre filmes e séries. Possui design responsivo para acessibilidade em diversos dispositivos.',
 
         sectionskillstitle: 'Tecnologias e experiências',
         cardtitle1: 'Full Stack JavaScript',
@@ -224,6 +227,7 @@ let data = {
         projectdescription5: 'A Pokémon library using the Pokédex API, using only HTML, CSS, and pure JavaScript without any libraries. I incorporated a search bar for user convenience. Given the commonplace nature of the project, I prioritized a modern aesthetic with gentle colors in the styling',
         projectdescription6: 'I crafted a portfolio for a tattoo artist, utilizing HTML, CSS, and pure JavaScript for precise control. The design incorporates Grid and Flexbox, ensuring responsiveness and adhering to the "mobile-first" approach. I implemented a "sandwich" menu to enhance navigation on mobile devices. Opting for a static site without libraries aims to provide a deeper mastery of the fundamentals. The website emphasizes images to showcase the artist`s work.',
         projectdescription7: 'I crafted my own portfolio following a "mobile-first" approach with a focus on responsiveness. I included a dark mode, the ability to change the site`s language, along with animations and interactions to provide a visually pleasing experience.',
+        projectdescription8: 'Curated for film and series enthusiasts, this project was developed using Angular v.17. The site integrates the OMDB API to provide users with personalized recommendations, reviews, and detailed information about movies and series. It features responsive design for accessibility across various devices.',
 
         sectionskillstitle: 'Skills and Experiences ',
         cardtitle1: 'Full Stack JavaScript',
