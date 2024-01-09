@@ -86,6 +86,7 @@ let navabout = document.querySelector('.title-about'),
     projectdescription6 = document.querySelector('.projectDescription6'),
     projectdescription7 = document.querySelector('.projectDescription7'),
     projectdescription8 = document.querySelector('.projectDescription8'),
+    projectdescription9 = document.querySelector('.projectDescription9'),
 
     sectionskillstitle = document.querySelector('.sectionSkillsTitle'),
     cardtitle1 = document.querySelector('#card1 .cardtitle1'),
@@ -136,6 +137,7 @@ function changeLanguage() {
     projectdescription6.textContent = data[selected].projectdescription6;
     projectdescription7.textContent = data[selected].projectdescription7;
     projectdescription8.textContent = data[selected].projectdescription8;
+    projectdescription9.textContent = data[selected].projectdescription9;
 
     sectionskillstitle.textContent = data[selected].sectionskillstitle;
 
@@ -185,6 +187,7 @@ let data = {
         projectdescription6: 'Criei um portfólio para um tatuador, empregando HTML, CSS e JavaScript puro para um controle mais preciso. O design adota Grid e Flexbox, garantindo responsividade e seguindo a abordagem "mobile first". Implementei um menu "sanduíche" para facilitar a navegação em dispositivos móveis. A escolha por um site estático, sem bibliotecas, visa proporcionar um maior domínio nas bases. O site foca nas imagens afim de mostrar o trabalho do artista.',
         projectdescription7: 'Desenvolvi meu próprio portfólio seguindo a abordagem "mobile first" com foco em responsividade. Incluí um darkmode e a capacidade de alterar o idioma do site, além de animações e interações para proporcionar uma experiência visualmente agradável.',
         projectdescription8: 'Curadoria para entusiastas de filmes e séries. Desenvolvido utilizando Angular v.17, o site integra uma API da OMDB para fornecer aos usuários recomendações personalizadas, avaliações e informações detalhadas sobre filmes e séries. Possui design responsivo para acessibilidade em diversos dispositivos.',
+        projectdescription9: 'Desenvolvi o projeto Blizzard com o objetivo de criar um clone do site da Blizzard, seguindo o modelo de Gilberto Prado para o BRChallenges. Garanti responsividade para diversas resoluções e destaquei a interatividade com efeitos de hover no menu e imagens dos jogos exclusivos. Além disso, implementei um modal de login, destacando minha habilidade em criar experiências envolventes para o usuário.',
 
         sectionskillstitle: 'Tecnologias e experiências',
         cardtitle1: 'Full Stack JavaScript',
@@ -228,6 +231,7 @@ let data = {
         projectdescription6: 'I crafted a portfolio for a tattoo artist, utilizing HTML, CSS, and pure JavaScript for precise control. The design incorporates Grid and Flexbox, ensuring responsiveness and adhering to the "mobile-first" approach. I implemented a "sandwich" menu to enhance navigation on mobile devices. Opting for a static site without libraries aims to provide a deeper mastery of the fundamentals. The website emphasizes images to showcase the artist`s work.',
         projectdescription7: 'I crafted my own portfolio following a "mobile-first" approach with a focus on responsiveness. I included a dark mode, the ability to change the site`s language, along with animations and interactions to provide a visually pleasing experience.',
         projectdescription8: 'Curated for film and series enthusiasts, this project was developed using Angular v.17. The site integrates the OMDB API to provide users with personalized recommendations, reviews, and detailed information about movies and series. It features responsive design for accessibility across various devices.',
+        projectdescription9: 'I developed the Blizzard project with the aim of creating a clone of the Blizzard website, following the model by Gilberto Prado for BRChallenges. I ensured responsiveness for various resolutions and emphasized interactivity with hover effects on the menu and images of exclusive games. Additionally, I implemented a login modal, showcasing my ability to create engaging user experiences.',
 
         sectionskillstitle: 'Skills and Experiences ',
         cardtitle1: 'Full Stack JavaScript',
