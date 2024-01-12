@@ -1,0 +1,19 @@
+<section id="education" class="container">
+  <h1 class="sectionSkillsTitle">{{ selectedLanguage === 'pt' ? 'Skills e experiência' : 'Skills and Experiences' }}</h1>
+  <div class="highlight"></div>
+
+  <div class="icons">
+    <ul class="flex">
+      <li class="flex" *ngFor="let icon of icons">
+        <app-icons [title]="icon.Title"></app-icons>
+      </li>
+    </ul>
+  </div>
+
+  <div class="courses">
+    <div class="flex">
+      <app-mini-card *ngFor="let course of courses" [title]="course.Title"></app-mini-card>
+    </div>
+  </div>
+
+</section>

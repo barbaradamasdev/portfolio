@@ -1,0 +1,150 @@
+.secondary {
+  padding-bottom: 0;
+}
+
+.project,
+.invert {
+  position: relative;
+  flex-direction: column;
+  gap: 0;
+}
+
+.project,
+.invert,
+.project img,
+.invert img {
+  width: 500px;
+  max-width: 74vw;
+}
+
+.project img {
+  transition: all 200ms;
+  border-radius: 15px;
+}
+
+.project img:hover {
+  transform: translate(10px, 10px);
+  box-shadow: -10px -10px 1px 1px var(--color10);
+}
+
+.invert img:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 1px 1px var(--color10);
+}
+
+.description {
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.destaque {
+  background-color: var(--color10);
+  color: var(--lightcolor);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.336);
+}
+
+.description h2 {
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.description .buttons > * {
+  position: relative;
+  margin-right: 30px;
+}
+
+.description button:hover::before {
+  transform: scaleX(0.5);
+}
+
+.btn-live::after,
+.btn-git::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: -2px;
+  color: var(--color9);
+  height: 20px;
+  width: 20px;
+  display: block;
+  background-size: 100%;
+  filter: var(--invertcolor);
+}
+
+.btn-live::after {
+  background-image: url(../../../assets/icon-live.gif);
+}
+
+.btn-git::after {
+  background-image: url(../../../assets/icon-git.gif);
+}
+
+@keyframes hoverbox {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 30px 30px 5px 1px #7e22ce42;
+  }
+}
+
+.icons li:hover {
+  transform: scale(1.2);
+}
+
+/*
+@media (min-width: 700px) {
+  .btns {
+    flex-direction: row;
+  }
+
+  .project {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .last-card {
+    margin-bottom: -100px;
+  }
+
+  .invert {
+    flex-direction: row-reverse;
+  }
+
+  .card {
+    min-height: 110px;
+  }
+
+  .destaque {
+    margin-left: -50px;
+    margin-right: 0;
+    max-width: 60vw;
+  }
+
+  .invert .destaque {
+    margin-right: -50px;
+    margin-left: 0;
+  }
+
+  .image {
+    width: inherit;
+    margin-left: 0;
+    max-width: 550px;
+  }
+
+  .left {
+    flex-direction: row;
+  }
+
+  .form div {
+    flex-direction: row;
+  }
+}
+ */
+
+

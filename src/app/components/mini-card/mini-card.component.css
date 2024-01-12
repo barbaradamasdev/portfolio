@@ -1,0 +1,27 @@
+.card.flex {
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--color2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 500px;
+  max-width: 80vw;
+  min-height: 260px;
+}
+
+.list {
+  flex-direction: row;
+  margin-left: 20px;
+  gap: 50px;
+}
+
+li{
+  list-style-type: "\279E";
+  margin-left: 20px;
+}
+
+h4 span {
+  font-size: 1rem;
+  font-weight: 400;
+}
