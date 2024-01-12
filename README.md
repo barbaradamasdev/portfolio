@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
@@ -25,3 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+![Tela final](https://github.com/barbaradamasdev/portfolio/blob/main/projects/projeto%20portfolio.jpg?raw=true)
+>>>>>>> 942aacd5e099ab0219a864c7289708391240adfb
