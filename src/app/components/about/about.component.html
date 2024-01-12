@@ -1,0 +1,27 @@
+<section id="about" class="container">
+  <h1>{{ language === 'pt' ? 'Desenvolvedora Fullstack' : 'FullStack Developer' }}</h1>
+  <div class="highlight"></div>
+
+  <div class="flex">
+      <article>
+        <p *ngIf="isLanguageDefined()">
+          {{ aboutText[0].Desc1[language!] }}
+        </p>
+
+        <p *ngIf="isLanguageDefined()">
+          {{ aboutText[0].Desc2[language!] }}
+        </p>
+
+        <p *ngIf="isLanguageDefined()">
+          {{ aboutText[0].Desc3[language!] }}
+        </p>
+          <div class="btns flex">
+              <a href="#contact"><button class="btn-principal intro-btn-principal" *ngIf="isLanguageDefined()">{{ aboutText[0].ButtonHire[language!] }}</button></a>
+              <a href="#projects"><button class="btn-principal intro-btn-secondary" *ngIf="isLanguageDefined()">{{ aboutText[0].ButtonView[language!] }}</button></a>
+          </div>
+      </article>
+      <article>
+          <img class="profile" src="../../../assets/projeto-perfil.jpg" alt="Profile image of Barbara">
+      </article>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<article class="flex project" [ngClass]="{ 'invert': invert }">
+  <div class="image">
+      <a target="_blank" href="{{project.Live}}">
+          <img [src]="project.Image" alt="{{project.title}} mockup">
+      </a>
+  </div>
+  <div class="description flex">
+      <h2>{{project.Title}}</h2>
+      <div class="languages flex">
+          <p *ngFor="let tech of project.Technologies">{{tech}}</p>
+      </div>
+      <p class="destaque projectDescription9">{{project.Description}}</p>
+      <div class="buttons flex">
+          <a target="_blank" class="btn-live" href="{{project.Live}}">Live Site</a>
+          <a target="_blank" class="btn-git" href="{{project.Github}}">Github</a>
+      </div>
+  </div>
+</article>

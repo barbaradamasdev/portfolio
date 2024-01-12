@@ -1,0 +1,92 @@
+section {
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+#about p {
+  padding-bottom: 15px;
+}
+
+#about .flex {
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro-description1 {
+  position: relative;
+}
+
+.intro-description1::after {
+  content: "";
+  background-image: url(../../../assets/images/icons/pin.png);
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+}
+
+.btns {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.btns .btn-principal {
+  margin: auto;
+}
+
+.icons ul {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.icons ul li {
+  list-style-type: none;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px;
+  transition: all 200ms;
+  font-size: 12px;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+}
+
+.profile {
+  width: 60vw;
+  max-width: 400px;
+  border: 2px solid var(--color5);
+  transition: all 500ms;
+  animation: hoverbox 2s ease-in-out infinite alternate;
+}
+
+@keyframes hoverbox {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 30px 30px 5px 1px #7e22ce42;
+  }
+}
+
+@media screen and (min-width:700px) {
+
+  .profile {
+    width: 35vw;
+    max-width: 420px;
+  }
+
+  #about .flex {
+    flex-direction: row;
+  }
+
+}

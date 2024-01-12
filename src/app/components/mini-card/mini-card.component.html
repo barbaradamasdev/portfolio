@@ -1,0 +1,6 @@
+<article class="card flex">
+  <h2 class="cardtitle3">{{ course.Course }}</h2>
+  <p class="cardSubtitle">{{ course.Title }}</p>
+  <p class="cardDescription3">{{ course.Description[selectedLanguage!] }}</p>
+  <h4>Curriculum: <span *ngFor="let c of course.Curriculum"> {{ c }} </span></h4>
+</article>

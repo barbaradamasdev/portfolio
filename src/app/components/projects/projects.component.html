@@ -1,0 +1,12 @@
+<section id="projects" class="container">
+  <h1 class="sectionAboutTitle">{{ selectedLanguage === 'pt' ? 'Projetos' : 'Projects' }}</h1>
+  <div class="highlight"></div>
+  <app-card *ngFor="let project of (showAllProjects ? projects : projects.slice(0, 4)); let i = index" [title]="project.Title" [invert]="i % 2 !== 0"></app-card>
+
+  @if (selectedLanguage === 'pt') {
+    <button class="btn-principal flex" (click)="toggleProjects()">Ver {{ showAllProjects ? 'menos' : 'mais' }}</button>
+  } @else {
+    <button class="btn-principal flex" (click)="toggleProjects()">See {{ showAllProjects ? 'less' : 'more' }}</button>
+  }
+
+</section>

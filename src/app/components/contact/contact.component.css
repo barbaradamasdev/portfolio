@@ -1,0 +1,203 @@
+
+
+
+/* Language */
+
+.language {
+  margin: 0 10px;
+}
+
+.language2 {
+  position: fixed;
+  right: 0;
+  top: 100px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  height: 55px;
+  width: 210px;
+  transform: scale(0.8);
+  color: var(--lightcolor);
+  background-color: var(--color10);
+}
+.openSelection .language2 {
+  height: 150px;
+}
+
+.language2 .flex {
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  position: absolute;
+  right: 15px;
+  top: 22px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--lightcolor);
+  cursor: pointer;
+}
+
+.openSelection {
+  height: 100px;
+  margin-top: -4px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: var(--color5);
+  font-weight: 700;
+}
+
+.visible {
+  display: inherit;
+}
+
+.invisible {
+  display: none;
+}
+
+/* Label and if empty */
+form label {
+  position: relative;
+  top: -47px;
+  margin: 10px;
+  font-size: 14px;
+  color: var(--intercolor);
+  cursor: text;
+  background-color: var(--color1);
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  transition: all 300ms;
+}
+
+label[for="message"] {
+  top: -180px;
+}
+
+/* In focus */
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input:focus + .label {
+  border-bottom: none;
+  top: -80px;
+}
+
+textarea:focus + .label {
+  border-bottom: none;
+  top: -230px;
+}
+
+/* If not empty, label -> up */
+input:not(:placeholder-shown) + .label {
+  top: -80px;
+}
+
+textarea:not(:placeholder-shown) + .label {
+  top: -230px;
+}
+
+/* If empty, label -> down */
+input:placeholder-shown + .label {
+  top: -47px;
+}
+
+textarea:placeholder-shown + .label {
+  top: -195px;
+}
+
+.dark input,
+.dark form label,
+.dark textarea {
+  background-color: var(--bg);
+}
+
+.form a {
+  background-color: var(--color1);
+}
+
+.dark .form a {
+  background-color: var(--bg);
+}
+
+.dark input,
+.dark textarea {
+  color: var(--fc);
+}
+
+/*  */
+
+.form div a {
+  transition: all 200ms;
+}
+
+.form div a:hover {
+  transform: scale(1.1);
+}
+
+form {
+  margin: auto;
+  max-width: 800px;
+  margin-top: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color1);
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.form div {
+  max-width: 800px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.contact_email,
+.contact_phone {
+  width: 50%;
+  text-align: center;
+  color: var(--intercolor);
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--color1);
+}
+
+.form a {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.form svg {
+  width: 30px;
+  height: 30px;
+}
+
+
+@media (min-width:910px) {
+
+  .form div {
+    flex-direction: row;
+  }
+
+}
