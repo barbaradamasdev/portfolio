@@ -15,8 +15,8 @@ export class AboutTextService {
         en: 'Later on, life led me to pursue a degree in Information Systems, where I learned algorithms, databases, and Java. In the midst of my college journey, I founded a confectionery business, honing essential skills in listening to and solving customers\' problems.',
       },
       Desc3: {
-        pt: ' Em 2022, a vida me chamou de volta para a tecnologia. Desde então, tenho estudado intensamente, apaixonando-me por cada momento dessa jornada.',
-        en: ' In 2022, life called me back to technology. Since then, I\'ve been studying intensively and falling in love with every moment of this journey.',
+        pt: ' Recentemente, a vida me chamou de volta para a tecnologia. Desde então, tenho estudado intensamente, apaixonando-me por cada momento dessa jornada.',
+        en: ' Recently, life called me back to technology. Since then, I\'ve been studying intensively and falling in love with every moment of this journey.',
       },
       ButtonHire: {
         pt: 'Fala comigo',
