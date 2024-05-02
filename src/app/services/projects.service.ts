@@ -42,7 +42,7 @@ export class ProjectsService {
       Title: 'TecaFocus - Movie Database',
       Image: '../../../assets/projects/projeto tecafocus.jpg',
       Github: 'https://github.com/barbaradamasdev/db-tecafocus-angular',
-      Live: 'https://db-tecafocus-angular.vercel.app/',
+      Live: 'https://tecafocus.vercel.app/home',
       Description: {
         pt: 'Curadoria para entusiastas de filmes e séries. Desenvolvido utilizando Angular v.17, o site integra uma API da OMDB para fornecer aos usuários recomendações personalizadas, avaliações e informações detalhadas sobre filmes e séries. Possui design responsivo para acessibilidade em diversos dispositivos.',
         en: 'Curated for film and series enthusiasts, this project was developed using Angular v.17. The site integrates the OMDB API to provide users with personalized recommendations, reviews, and detailed information about movies and series. It features responsive design for accessibility across various devices.',
