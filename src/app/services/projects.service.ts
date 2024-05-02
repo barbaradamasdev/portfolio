@@ -75,7 +75,7 @@ export class ProjectsService {
       Title: 'Portfolio',
       Image: '../../../assets/projects/projeto portfolio.jpg',
       Github: 'https://github.com/barbaradamasdev/portfolio',
-      Live: 'https://barbaradamasdev.github.io/portfolio/',
+      Live: 'https://barbaradamasceno.vercel.app/',
       Description: {
         pt: 'Desenvolvi meu próprio portfólio seguindo a abordagem "mobile first" com foco em responsividade. Incluí um darkmode e a capacidade de alterar o idioma do site, além de animações e interações para proporcionar uma experiência visualmente agradável.',
         en: 'I crafted my own portfolio following a "mobile-first" approach with a focus on responsiveness. I included a dark mode, the ability to change the site`s language, along with animations and interactions to provide a visually pleasing experience.',
