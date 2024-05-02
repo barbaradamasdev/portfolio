@@ -50,17 +50,6 @@ export class ProjectsService {
       Technologies: ['Typescript', 'Angular', 'API', 'Html', 'CSS']
     },
     {
-      Title: 'GloboNews [Clone] - News Website',
-      Image: '../../../assets/projects/projeto globo news.jpg',
-      Github: 'https://barbaradamasdev.github.io/angular-blog-clone-globonews/',
-      Live: 'https://github.com/barbaradamasdev/angular-blog-clone-globonews',
-      Description: {
-        pt: 'Clonei um site de notícias, GloboNews, uma renomada plataforma nacional. Priorizei a responsividade e otimização para interações aprimoradas em dispositivos móveis. Utilizei Angular e TypeScript para uma abordagem robusta e eficiente no desenvolvimento, garantindo uma experiência de usuário fluida e envolvente.',
-        en: 'I crafted a news website, a clone of GloboNews, a prominent national platform. Emphasizing responsiveness and enhanced interactions for mobile devices, I employed Angular and TypeScript for a robust and efficient development approach, ensuring a seamless and engaging user experience.',
-      },
-      Technologies: ['Typescript', 'Angular', 'Html', 'CSS']
-    },
-    {
       Title: 'Pokedex - API Website',
       Image: '../../../assets/projects/projeto pokedex.jpg',
       Github: 'https://github.com/barbaradamasdev/js-pokedex',
