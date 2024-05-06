@@ -16,11 +16,12 @@ export class ProjectsComponent {
   projects : any[] = [];
   showAllProjects: boolean = false;
   selectedLanguage: string = 'pt';
+  selectedTechnology: string = '';
+  selectedTechButton: string = '';
 
   constructor(
     private ProjectsService: ProjectsService,
     private languageService: LanguageService
-
   ) {}
 
   ngOnInit() {
@@ -35,4 +36,32 @@ export class ProjectsComponent {
     this.showAllProjects = !this.showAllProjects;
   }
 
+  getAllTechnologies(): string[] {
+    let allTech: string[] = [];
+    this.projects.forEach(project => {
+      project.Technologies.forEach((tech: string) => {
+        if (!allTech.includes(tech)) {
+          allTech.push(tech);
+        }
+      });
+    });
+    return allTech;
+  }
+
+  selectTechnology(tech: string) {
+    if (tech === '') {
+      this.selectedTechnology = '';
+      this.selectedTechButton = '';
+    } else {
+      this.selectedTechnology = tech;
+      this.selectedTechButton = tech;
+    }
+  }
+
+  getFilteredProjects(): any[] {
+    if (this.selectedTechnology) {
+      return this.projects.filter(project => project.Technologies.includes(this.selectedTechnology));
+    }
+    return this.projects;
+  }
 }

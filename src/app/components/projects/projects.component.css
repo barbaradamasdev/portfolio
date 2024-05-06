@@ -168,7 +168,7 @@
 .slider-content {
   gap: 30px;
   display: flex;
-  transition: transform 0.5s ease; /* Adiciona uma transição suave ao conteúdo */
+  transition: transform 0.5s ease;
 }
 
 .flex {
@@ -176,39 +176,18 @@
   flex-wrap: wrap;
 }
 
-/* .row {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 20px;
-} */
-
-/* app-vertical-card {
-  width: 48%;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-} */
-
-
-/* #projects {
-  position: relative;
+.btn-techs {
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
 }
 
-.arrow {
-  position: absolute;
-  background: var(--color1);
-  border-radius: 50%;
-  padding: 4px 10px;
-  top: 400px;
-  font-size: 24px;
-  cursor: pointer;
-  color: #000;
+.btn-techs .btn-principal {
+  width: auto;
+  margin: 0;
 }
 
-.left {
-  left: -30px;
+.selected {
+  background: var(--color9);
+  color: white;
 }
-
-.right {
-  right: -30px;
-} */
