@@ -3,14 +3,11 @@
   <div class="highlight"></div>
 
   <div class="btn-techs flex">
-    <button
-      class="btn-principal"
-      *ngFor="let tech of getAllTechnologies()"
-      (click)="selectTechnology(tech)"
-      [ngClass]="{'selected': tech === selectedTechButton}">
-      {{ tech }}
+    <button class="btn-principal" (click)="selectTechnology('')">Todos ({{ getTotalProjects() }})</button>
+
+    <button class="btn-principal" *ngFor="let tech of getAllTechnologiesWithCount()" (click)="selectTechnology(tech.technology)">
+      {{ tech.technology }} ({{ tech.count }})
     </button>
-    <button class="btn-principal" (click)="selectTechnology('')">Todos</button>
   </div>
 
   <app-card *ngFor="let project of (showAllProjects ? getFilteredProjects() : getFilteredProjects().slice(0, 4)); let i = index" [title]="project.Title" [invert]="i % 2 !== 0"></app-card>

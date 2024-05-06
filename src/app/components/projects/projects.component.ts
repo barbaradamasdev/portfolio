@@ -36,16 +36,27 @@ export class ProjectsComponent {
     this.showAllProjects = !this.showAllProjects;
   }
 
-  getAllTechnologies(): string[] {
-    let allTech: string[] = [];
+  getAllTechnologiesWithCount(): { technology: string, count: number }[] {
+    let techCounts: { technology: string, count: number }[] = [];
     this.projects.forEach(project => {
       project.Technologies.forEach((tech: string) => {
-        if (!allTech.includes(tech)) {
-          allTech.push(tech);
+        let existingTech = techCounts.find(t => t.technology === tech);
+        if (existingTech) {
+          existingTech.count++;
+        } else {
+          techCounts.push({ technology: tech, count: 1 });
         }
       });
     });
-    return allTech;
+    return techCounts;
+  }
+
+  getTotalProjects(): number {
+    let total = 0;
+    this.projects.forEach(project => {
+      total++;
+    });
+    return total;
   }
 
   selectTechnology(tech: string) {
