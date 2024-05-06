@@ -18,5 +18,5 @@ import { CardComponent } from "./components/card/card.component";
     imports: [CommonModule, RouterOutlet, HeaderComponent, AboutComponent, ProjectsComponent, ExperienceComponent, ContactComponent, FooterComponent, TopbuttonComponent, CardComponent]
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Barbara Damasceno - Portfolio';
 }

@@ -26,11 +26,24 @@
   box-shadow: 10px 10px 1px 1px var(--color10);
 }
 
+.languages > p {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  background: var(--color2);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
 .description {
   flex-direction: column;
   gap: 15px;
   justify-content: center;
   position: relative;
+}
+
+.description .languages {
+  gap: 20px !important;
 }
 
 .destaque {
