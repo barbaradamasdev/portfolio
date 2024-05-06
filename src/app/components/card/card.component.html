@@ -13,7 +13,7 @@
 
 
       <div class="buttons flex">
-          <a target="_blank" class="btn-live" href="{{project.Live}}">Live Site</a>
+          <a *ngIf="project.Live" target="_blank" class="btn-live" href="{{project.Live}}">Live Site</a>
           <a *ngIf="project.Github" target="_blank" class="btn-git" href="{{project.Github}}">Github</a>
       </div>
   </div>
