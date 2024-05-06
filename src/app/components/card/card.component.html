@@ -7,7 +7,7 @@
   <div class="description flex">
       <h2>{{project.Title}}</h2>
       <div class="languages flex">
-          <p *ngFor="let tech of project.Technologies">{{tech}}</p>
+          <p style="font-weight: 400;" *ngFor="let tech of project.Technologies">{{tech}}</p>
       </div>
       <p *ngIf="isLanguageAndDescriptionDefined()">{{ project.Description[language!] }}</p>
 
