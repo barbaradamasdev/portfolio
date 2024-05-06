@@ -30,13 +30,13 @@ export class ProjectsService {
     {
       Title: 'Pandas Bárbaros - Confeitaria',
       Image: '../../../assets/projects/projeto pandas barbaros.jpg',
-      /*Github: 'https://github.com/barbaradamasdev/to-do-list',*/
+      Github: '',
       Live: 'https://www.pandasbarbaros.com.br/',
       Description: {
-        pt: 'Desenvolvi o site da confeitaria Pandas Barbaros utilizando WordPress, onde foquei no design, na interface do usuário e na experiência do usuário. Criei um layout atrativo e funcional para exibir os produtos da confeitaria, além de implementar funcionalidades como um sistema de pedidos online e um blog para compartilhar receitas e dicas de culinária.',
-        en: "I developed the website for Pandas Barbaros Bakery using WordPress, focusing on design, user interface, and user experience. I created an attractive and functional layout to showcase the bakery's products, as well as implementing features such as an online ordering system and a blog to share recipes and cooking tips."
+        pt: 'Desenvolvi o site da confeitaria Pandas Barbaros utilizando WordPress, onde foquei no design, na interface do usuário e na experiência do usuário. Criei um layout atrativo e funcional para exibir os produtos da confeitaria',
+        en: "I developed the website for Pandas Barbaros Bakery using WordPress, focusing on design, user interface, and user experience. I created an attractive and functional layout to showcase the bakery's products."
       },
-      Technologies: ['Wordpress']
+      Technologies: ['Wordpress', 'CSS']
     },
     {
       Title: 'Space Website',
