@@ -3,9 +3,9 @@
   <div class="highlight"></div>
 
   <div class="btn-techs flex">
-    <button class="btn-principal" (click)="selectTechnology('')">Todos ({{ getTotalProjects() }})</button>
+    <button class="btn-principal" [ngClass]="{'selected': !selectedTechnology}" (click)="selectTechnology('')">Todos ({{ getTotalProjects() }})</button>
 
-    <button class="btn-principal" *ngFor="let tech of getAllTechnologiesWithCount()" (click)="selectTechnology(tech.technology)">
+    <button class="btn-principal" [ngClass]="{'selected': tech.technology === selectedTechButton}" *ngFor="let tech of getAllTechnologiesWithCount()" (click)="selectTechnology(tech.technology)">
       {{ tech.technology }} ({{ tech.count }})
     </button>
   </div>
