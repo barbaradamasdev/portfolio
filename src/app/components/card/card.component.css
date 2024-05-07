@@ -33,6 +33,12 @@
   background: var(--color2);
   padding: 5px 10px;
   border-radius: 8px;
+  color: var(--color9);
+}
+
+.dark > .languages > p {
+  background: var(--color3);
+  color: black !important;
 }
 
 .description {
