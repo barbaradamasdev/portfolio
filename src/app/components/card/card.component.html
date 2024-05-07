@@ -1,7 +1,7 @@
 <article class="flex project" [ngClass]="{ 'invert': invert }">
   <div class="image">
-      <a target="_blank" href="{{project.Live}}">
-          <img [src]="project.Image" alt="{{project.title}} mockup">
+      <a target="_blank" [href]="project.Live ? project.Live : project.Github">
+        <img [src]="project.Image" alt="{{project.title}} mockup">
       </a>
   </div>
   <div class="description flex">
