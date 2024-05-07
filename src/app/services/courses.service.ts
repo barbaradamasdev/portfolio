@@ -10,20 +10,20 @@ export class CoursesService {
       Course: 'Bootcamp FullStack SharpCoders 2023',
       Title: 'Íma Tech',
       Description: {
-        pt:'Bootcamp de 6 meses, com data final em 2024 na trilha C# e Angular.',
-        en:'Bootcamp on the Fullstack C# + Angular track, lasting 6 months, ending in 2024.',
+        pt:'Bootcamp de 6 meses, concluído em 2024. Aprimorei habilidades técnicas e soft skills por meio de projetos práticos. Atuei como monitora, auxiliando colegas no desenvolvimento técnico e liderando projetos colaborativos.',
+        en:'6-month Bootcamp, completed in 2024. Enhanced technical and soft skills through hands-on projects. Served as a mentor, assisting peers in technical development and leading collaborative projects.',
       },
-      Curriculum: ['JavaScript · CSS · Bootstrap · TypeScript · HTML5 · C# · Angular (Framework)']
+      Curriculum: ['JavaScript, CSS, Bootstrap, TypeScript, HTML5, C#, Angular (Framework), Comunicação, Trabalho em equipe, Liderança']
     },
-    {
-      Course: 'Bootcamp FullStack Java+Angular 2023',
-      Title: 'DIO + Santancer',
-      Description: {
-        pt:'Bootcamp na trilha de Fullstack Java + Angular, com duração de 2 meses, finalizado em 2023.',
-        en:"Bootcamp on the Fullstack Java + Angular track, lasting 2 months, ending in 2023."
-      },
-      Curriculum: ['Javascript, Typescript, Angular, DataBase SQL and NoSQL, Spring Framework, API Rest']
-    },
+    // {
+    //   Course: 'Bootcamp FullStack Java+Angular 2023',
+    //   Title: 'DIO + Santancer',
+    //   Description: {
+    //     pt:'Bootcamp na trilha de Fullstack Java + Angular, com duração de 2 meses, finalizado em 2023.',
+    //     en:"Bootcamp on the Fullstack Java + Angular track, lasting 2 months, ending in 2023."
+    //   },
+    //   Curriculum: ['Javascript, Typescript, Angular, DataBase SQL and NoSQL, Spring Framework, API Rest']
+    // },
     {
       Course: 'Full Stack JavaScript',
       Title: 'The Odin Project',
