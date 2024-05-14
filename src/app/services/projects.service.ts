@@ -97,7 +97,7 @@ export class ProjectsService {
       Title: 'Tattoo Portfolio',
       Image: '../../../assets/projects/projeto tattoo.jpg',
       Github: 'https://github.com/barbaradamasdev/Landing-page-Tattoo',
-      Live: 'https://barbaradamasdev.github.io/Landing-page-Tattoo/"',
+      Live: 'https://barbaradamasdev.github.io/Landing-page-Tattoo/',
       Description: {
         pt: 'Criei um portfólio para um tatuador, empregando HTML, CSS e JavaScript puro para um controle mais preciso. O design adota Grid e Flexbox, garantindo responsividade e seguindo a abordagem "mobile first". Implementei um menu "sanduíche" para facilitar a navegação em dispositivos móveis. A escolha por um site estático, sem bibliotecas, visa proporcionar um maior domínio nas bases. O site foca nas imagens afim de mostrar o trabalho do artista.',
         en: 'I crafted a portfolio for a tattoo artist, utilizing HTML, CSS, and pure JavaScript for precise control. The design incorporates Grid and Flexbox, ensuring responsiveness and adhering to the "mobile-first" approach. I implemented a "sandwich" menu to enhance navigation on mobile devices. Opting for a static site without libraries aims to provide a deeper mastery of the fundamentals. The website emphasizes images to showcase the artist`s work.',
